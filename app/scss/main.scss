@@ -1,0 +1,39 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 50%;
+}
+
+.button {
+  padding: 1.5rem 3rem;
+  font-weight: 500;
+  font-family: 'Be Vietnam', sans-serif;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  //box-shadow: 0rem 1rem 1.2rem -0.6rem $bright_red_color;
+}
