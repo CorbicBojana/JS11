@@ -1,2 +1,87 @@
 @media only screen and (max-width: 780px) {
+
+    .container {
+        width: 30.5rem;
+    }
+
+    .header {
+
+        .header_intro {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            z-index: 1000;
+
+            .nav_button {
+                display: inline-block;
+
+                .nav_button_close {
+                    display: none;
+                }
+            }
+        }
+
+        .nav {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($very_dark_blue, 0.8);
+            z-index: 100;
+
+            .list {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10rem 3.5rem 0;
+                border-top: 0.1rem solid $white_color;
+                text-align: center;
+
+                .list_item {
+                    width: 100%;
+                    border-bottom: 0.1rem solid $white_color;
+
+                    &:last-child {
+                        margin-top: 2rem;                            
+                        border-bottom: none;
+                    }
+
+                    .list_item_link {
+                        display: inline-block;
+                        padding: 2.5rem;
+                        color: $white_color;
+
+                        &:hover {
+                            color: $soft_red_color;
+                        }
+                    }
+
+                    .button {
+                        padding: 1.5rem;
+                        background-color: transparent;
+                        border-color: $white_color;
+                        width: 100%;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .container_social_icon {
+                display: block;
+                margin-top: 12rem;
+                text-align: center;
+
+                .social_icon_link {
+                    margin: 0 1.5rem;
+                }
+            }
+        }
+    }
+
+    .intro {
+        margin: 0 3.5rem;
+    }
 }
