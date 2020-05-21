@@ -34,7 +34,7 @@ body {
 }
 
 .col_4 {
-  width: 40%;
+  width: 35%;
   text-align: center;
 }
 
@@ -58,6 +58,17 @@ body {
     color: $soft_blue_color;
     background-color: $white_color;
     border: 0.2rem solid $soft_blue_color;
+  }
+}
+
+.button_secondary {
+  color: $white_color;
+  background-color: $soft_red_color;
+
+  &:hover {
+    color: $soft_red_color;
+    background-color: $white_color;
+    border: 0.2rem solid $soft_red_color;
   }
 }
 
@@ -114,17 +125,6 @@ p {
             color: $soft_red_color;
           }
         }
-
-        .button_secondary {
-          color: $white_color;
-          background-color: $soft_red_color;
-        
-          &:hover {
-            color: $soft_red_color;
-            background-color: $white_color;
-            border: 0.2rem solid $soft_red_color;
-          }
-        }
       }
     }
   }
@@ -146,9 +146,9 @@ p {
       margin-left: 1rem;
 
       &:hover {
-        color: $grayish_blue_color;
+        color: $very_dark_blue;
         background-color: $white_color;
-        border: 0.2rem solid $grayish_blue_color;
+        border: 0.2rem solid $very_dark_blue;
       }
     }
   }
@@ -217,6 +217,30 @@ p {
       left: 0;
       bottom: 0;
       border-radius: 0 0 30% 0;
+    }
+  }
+}
+
+// CONTACT 
+.container_contact {
+  padding: 6rem 0 7rem;
+  background-color: $soft_blue_color;
+
+  h2, p {
+    color: $white_color;
+  }
+
+  .form {
+
+    .form_input {
+      width: calc(100% - 18rem);
+      margin-right: 1rem;
+      padding: 1.5rem 3rem;
+      border-radius: 0.8rem;
+
+      &::placeholder {
+        color: $grayish_blue_color;
+      }
     }
   }
 }
