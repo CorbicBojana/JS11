@@ -125,6 +125,19 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  .nav {
+
+    .list {
+
+      .list_item {
+
+        .button_secondary {
+          color: $white_color;
+        }
+      }
+    }
+  }
 }
 
 // INTRO 
@@ -173,20 +186,20 @@ p {
 // MAIN 
 .main {
 
-  .row {
+  .container_features {
     margin: 6rem;
   }
 
   .bookmark {
     
-    .list {
+    .bookmark_list {
       display: flex;
       justify-content: center;
       align-items: center;
 
-      .list_item {
+      .bookmark_list_item {
 
-        .list_item_link {
+        .bookmark_list_item_link {
           display: inline-block;
           padding: 2.5rem 4.5rem;
           color: $grayish_blue_color;
@@ -211,9 +224,46 @@ p {
     justify-content: space-between;
 
     .intro_bg_left {
-      left: 0;
+      position: absolute;
+      width: 50rem;
+      height: 36rem;
+      left: -16rem;
       bottom: 0;
+      background-color: $soft_blue_color;
       border-radius: 0 0 30% 0;
+    }
+  }
+}
+
+// QUESTIONS 
+.container_questions {
+  margin: 12rem 45rem 14rem;
+  text-align: center;
+
+  .container_questions_intro {
+    margin: 0 2rem;
+  }
+
+  .questions_list {
+    margin: 5rem 0;
+    border-top: 0.06rem solid $grayish_blue_color;
+
+    .questions_list_item {
+      border-bottom: 0.06rem solid $grayish_blue_color;
+
+      .questions_list_item_link {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 1.5rem 2rem 0;
+        width: 100%;
+        color: $very_dark_blue;
+        font-weight: 500;
+        text-decoration: none;
+
+        img {
+          height: 100%;
+        }
+      }
     }
   }
 }
@@ -234,6 +284,8 @@ p {
       margin-right: 1rem;
       padding: 1.5rem 3rem;
       border-radius: 0.8rem;
+      border: none;
+      outline: none;
 
       &::placeholder {
         color: $grayish_blue_color;
@@ -264,6 +316,10 @@ p {
 
       .list_item_link {
         color: $white_color;
+
+        &:hover {
+          color: $soft_red_color;
+        }
       }
     }
   }
