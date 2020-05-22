@@ -46,7 +46,7 @@ html {
 body {
   font-size: 1.8rem;
   font-family: 'Rubik', sans-serif;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 .container {
   width: 112rem;
@@ -252,7 +252,7 @@ p {
           height: 100%; }
 
 .container_contact {
-  padding: 6rem 0 7rem;
+  padding: 6rem 3.5rem 7rem;
   background-color: #5368df; }
   .container_contact h2, .container_contact p {
     color: white; }
@@ -291,6 +291,18 @@ p {
 @media only screen and (max-width: 780px) {
   .container {
     width: 30.5rem; }
+  .col_4, .col_3 {
+    width: 100%; }
+  h1 {
+    font-size: 3.2rem; }
+  h2 {
+    font-size: 2.4rem; }
+  h3 {
+    font-size: 1.6rem; }
+  h1, h2 {
+    line-height: 1.2; }
+  .button {
+    padding: 1.2rem 1.8rem; }
   .header .header_intro {
     display: flex;
     justify-content: space-between;
@@ -298,7 +310,8 @@ p {
     position: relative;
     z-index: 1000; }
     .header .header_intro .nav_button {
-      display: inline-block; }
+      display: inline-block;
+      cursor: pointer; }
       .header .header_intro .nav_button .nav_button_close {
         display: none; }
   .header .nav {
@@ -342,4 +355,70 @@ p {
       .header .nav .container_social_icon .social_icon_link {
         margin: 0 1.5rem; }
   .intro {
-    margin: 0 3.5rem; } }
+    flex-direction: column;
+    margin: 0 3.5rem; }
+    .intro .intro_content {
+      width: 100%;
+      order: 1;
+      margin-top: 5rem;
+      text-align: center; }
+      .intro .intro_content .button_intro {
+        margin: 0 0 1rem; }
+    .intro .intro_bg_right {
+      width: 30rem;
+      height: 20rem;
+      top: 6rem;
+      right: -3.5rem; }
+  .main .container_features {
+    margin: 6rem 3.5rem 4rem; }
+  .main .bookmark .bookmark_list {
+    flex-direction: column;
+    margin: 3.5rem 3.5rem 6rem;
+    border-top: 0.1rem solid #9194a1;
+    text-align: center; }
+    .main .bookmark .bookmark_list .bookmark_list_item {
+      width: 100%;
+      border-bottom: 0.1rem solid #9194a1; }
+      .main .bookmark .bookmark_list .bookmark_list_item .bookmark_list_item_link {
+        border: none; }
+      .main .bookmark .bookmark_list .bookmark_list_item .active {
+        border-bottom: 0.4rem solid #fa5757; }
+  .main .bookmark .intro .intro_bg_left {
+    width: 30rem;
+    height: 20rem;
+    top: 6rem;
+    left: -3.5rem; }
+  .main .container_browser .col_3 {
+    margin: 4rem 0; }
+    .main .container_browser .col_3:first-child {
+      margin: 0; }
+    .main .container_browser .col_3:nth-child(2), .main .container_browser .col_3:last-child {
+      margin: 4rem 0; }
+  .container_questions {
+    margin: 12rem 3.5rem; }
+    .container_questions .questions_list {
+      text-align: left; }
+  .container_contact .col_4 .form {
+    display: flex;
+    flex-direction: column; }
+    .container_contact .col_4 .form .form_input {
+      margin: 0 0 1.5rem;
+      width: 100%; }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem;
+    text-align: center; }
+    .footer .footer_links {
+      flex-direction: column; }
+      .footer .footer_links .logo_link {
+        margin: 0 0 4rem; }
+      .footer .footer_links .nav {
+        justify-content: center;
+        margin-bottom: 4rem; }
+        .footer .footer_links .nav .list {
+          flex-direction: column; }
+          .footer .footer_links .nav .list .list_item {
+            margin-bottom: 3rem; }
+    .footer .container_social_icon .social_icon_link:first-child {
+      margin-right: 0; } }
