@@ -313,6 +313,9 @@ p {
 
     .questions_list_item {
       border-bottom: 0.06rem solid $grayish_blue_color;
+      position: relative;
+      z-index: 100;
+      text-align: left;
 
       .questions_list_item_link {
         display: flex;
@@ -323,9 +326,41 @@ p {
         font-weight: 500;
         text-decoration: none;
 
+        &:hover {
+          color: $soft_red_color;
+          cursor: pointer;
+        }
+
         img {
           height: 100%;
         }
+
+        .img_answer {
+          display: none;
+        }
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .answer {
+
+      .questions_list_item_link {
+
+        .img_question {
+          display: none;
+        }
+  
+        .img_answer {
+          display: inline-block;
+          transform: rotate(180deg);
+        }
+      }
+
+      p {
+        display: block;
       }
     }
   }

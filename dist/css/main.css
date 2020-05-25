@@ -239,7 +239,10 @@ p {
     margin: 5rem 0;
     border-top: 0.06rem solid #9194a1; }
     .container_questions .questions_list .questions_list_item {
-      border-bottom: 0.06rem solid #9194a1; }
+      border-bottom: 0.06rem solid #9194a1;
+      position: relative;
+      z-index: 100;
+      text-align: left; }
       .container_questions .questions_list .questions_list_item .questions_list_item_link {
         display: flex;
         justify-content: space-between;
@@ -248,8 +251,22 @@ p {
         color: #252b46;
         font-weight: 500;
         text-decoration: none; }
+        .container_questions .questions_list .questions_list_item .questions_list_item_link:hover {
+          color: #fa5757;
+          cursor: pointer; }
         .container_questions .questions_list .questions_list_item .questions_list_item_link img {
           height: 100%; }
+        .container_questions .questions_list .questions_list_item .questions_list_item_link .img_answer {
+          display: none; }
+      .container_questions .questions_list .questions_list_item p {
+        display: none; }
+    .container_questions .questions_list .answer .questions_list_item_link .img_question {
+      display: none; }
+    .container_questions .questions_list .answer .questions_list_item_link .img_answer {
+      display: inline-block;
+      transform: rotate(180deg); }
+    .container_questions .questions_list .answer p {
+      display: block; }
 
 .container_contact {
   padding: 6rem 3.5rem 7rem;

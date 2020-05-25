@@ -21,3 +21,11 @@ button.addEventListener("click", function() {
         showNav = false;
     }
 })
+
+var questions = document.getElementsByClassName("questions_list_item");
+
+for (var i = 0; i < questions.length; i++) {
+    questions[i].addEventListener("click", function() {
+        this.classList.toggle('answer');
+    })
+}
