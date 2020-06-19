@@ -8,10 +8,19 @@ function showError(message) {
     error.innerHTML = message;
   }
   
-  // Hide error message
-  function showSucces(input, message) {
+// Hide error message
+function showSucces(message) {
     email.style.borderColor = "transparent";
     error.innerHTML = message;
+  }
+
+// Check required fields
+function checkRequired(input) {
+    if (input.value.trim() === "") {
+        showError("Cannot be empty");
+      } else {
+        showSucces("");
+      }
   }
 
 // Check email format
@@ -27,7 +36,7 @@ function checkEmail(input) {
   
   form.addEventListener("submit", function(e) {
     e.preventDefault();
-  
-    //checkRequired([firstName, lastName, email, password]);
+
+    checkRequired(email); 
     checkEmail(email);
   });
