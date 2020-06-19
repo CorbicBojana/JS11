@@ -1,31 +1,33 @@
-var button = document.getElementById("nav_button");
-var buttonOpen = document.getElementById("nav_button_open");
-var buttonClose = document.getElementById("nav_button_close");
-var nav = document.getElementById("nav");
+const form = document.getElementById("form");
+const email = document.getElementById("form_input");
+const error = document.getElementById("form_error");
 
-var showNav = false;
+// Show error message
+function showError(message) {
+    email.style.borderColor = "hsl(0, 94%, 66%)";
+    error.innerHTML = message;
+  }
+  
+  // Hide error message
+  function showSucces(input, message) {
+    email.style.borderColor = "transparent";
+    error.innerHTML = message;
+  }
 
-button.addEventListener("click", function() {
-
-    if (showNav === false) {
-        buttonOpen.style.display = "none";
-        buttonClose.style.display = "inline-block";
-        nav.style.display = "block";
-
-        showNav = true;
+// Check email format
+function checkEmail(input) {
+    var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  
+    if (reg.test(input.value.trim())) {
+      showSucces(input, "");
     } else {
-        buttonOpen.style.display = "inline-block";
-        buttonClose.style.display = "none";
-        nav.style.display = "none";
-
-        showNav = false;
+      showError("Whoops, make sure it's an email");
     }
-})
-
-var questions = document.getElementsByClassName("questions_list_item");
-
-for (var i = 0; i < questions.length; i++) {
-    questions[i].addEventListener("click", function() {
-        this.classList.toggle('answer');
-    })
-}
+  }
+  
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+  
+    //checkRequired([firstName, lastName, email, password]);
+    checkEmail(email);
+  });

@@ -278,10 +278,16 @@ p {
     margin-right: 1rem;
     padding: 1.5rem 3rem;
     border-radius: 0.8rem;
-    border: none;
+    border: 0.2rem solid transparent;
     outline: none; }
     .container_contact .form .form_input::placeholder {
       color: #9194a1; }
+  .container_contact .form .form_error {
+    padding: 0.6rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fa5757; }
 
 .footer {
   display: flex;

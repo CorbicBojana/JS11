@@ -382,12 +382,20 @@ p {
       margin-right: 1rem;
       padding: 1.5rem 3rem;
       border-radius: 0.8rem;
-      border: none;
+      border: 0.2rem solid transparent;
       outline: none;
 
       &::placeholder {
         color: $grayish_blue_color;
       }
+    }
+
+    .form_error {
+      padding: 0.6rem;
+      text-align: left;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: $soft_red_color;
     }
   }
 }

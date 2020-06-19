@@ -75,17 +75,17 @@
     <div class="bookmark">
       <ul class="bookmark_list">
         <li class="bookmark_list_item">
-          <a href="#" class="bookmark_list_item_link active">Simple Bookmarking</a>
+          <a href="#intro_bookmarking" id="intro_bookmarking" class="bookmark_list_item_link active">Simple Bookmarking</a>
         </li>
         <li class="bookmark_list_item">
-          <a href="#" class="bookmark_list_item_link">Speedy Searching</a>
+          <a href="#intro_searching" class="bookmark_list_item_link">Speedy Searching</a>
         </li>
         <li class="bookmark_list_item">
-          <a href="#" class="bookmark_list_item_link">Easy Sharing</a>
+          <a href="#intro_sharing" class="bookmark_list_item_link">Easy Sharing</a>
         </li>
       </ul>
 
-      <div class="intro">
+      <div id="intro_bookmarking" class="intro">
         <div class="intro_img">
           <img src="./images/illustration-features-tab-1.svg" alt="illustration" />
         </div>
@@ -98,7 +98,7 @@
         <div class="intro_bg_left"></div>
       </div>
 
-      <div class="intro">
+      <div id="intro_searching" class="intro">
         <div class="intro_img">
           <img src="./images/illustration-features-tab-2.svg" alt="illustration" />
         </div>
@@ -111,7 +111,7 @@
         <div class="intro_bg_left"></div>
       </div>
 
-      <div class="intro">
+      <div id="intro_sharing" class="intro">
         <div class="intro_img">
           <img src="./images/illustration-features-tab-3.svg" alt="illustration" />
         </div>
@@ -213,9 +213,10 @@
     <div class="col_4">
       <p>35,000+ already joined</p>
       <h2>Stay up-to-date with what we’re doing</h2>
-      <form class="form">
-        <input class="form_input" placeholder="Enter your email adress" />
+      <form id="form" class="form">
+        <input id="form_input" class="form_input" placeholder="Enter your email adress" />
         <button class="button button_secondary">Contact Us</button>
+        <div id="form_error" class="form_error"></div>
       </form>
     </div>
   </div>
