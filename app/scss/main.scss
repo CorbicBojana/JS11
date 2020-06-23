@@ -340,8 +340,12 @@ p {
         }
       }
 
-      p {
+      .answer {
         display: none;
+      }
+
+      .active {
+        display: block;
       }
     }
 

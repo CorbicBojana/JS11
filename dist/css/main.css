@@ -258,8 +258,10 @@ p {
           height: 100%; }
         .container_questions .questions_list .questions_list_item .questions_list_item_link .img_answer {
           display: none; }
-      .container_questions .questions_list .questions_list_item p {
+      .container_questions .questions_list .questions_list_item .answer {
         display: none; }
+      .container_questions .questions_list .questions_list_item .active {
+        display: block; }
     .container_questions .questions_list .answer .questions_list_item_link .img_question {
       display: none; }
     .container_questions .questions_list .answer .questions_list_item_link .img_answer {

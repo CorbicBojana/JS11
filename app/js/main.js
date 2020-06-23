@@ -40,3 +40,25 @@ function checkEmail(input) {
     checkRequired(email); 
     checkEmail(email);
   });
+
+const links = document.getElementsByClassName("questions_list_item");
+const answers = document.getElementsByClassName("answer");
+const imgOpen = document.getElementById("img_question");
+const imgClose = document.getElementById("img_answer");
+let open = false;
+
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function() {
+    if (open) {
+      answers[i].classList.remove("active");
+      imgOpen.style.display = "block";
+      imgClose.style.display = "none";
+      open = false;
+    } else {
+      answers[i].classList.add("active");
+      imgOpen.style.display = "none";
+      imgClose.style.display = "block";
+      open = true;
+    }
+  })
+}
