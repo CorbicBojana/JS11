@@ -43,21 +43,21 @@ function checkEmail(input) {
 
 const links = document.getElementsByClassName("questions_list_item");
 const answers = document.getElementsByClassName("answer");
-const imgOpen = document.getElementById("img_question");
-const imgClose = document.getElementById("img_answer");
+const imgOpen = document.getElementsByClassName("img_question");
+const imgClose = document.getElementsByClassName("img_answer");
 let open = false;
 
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function() {
     if (open) {
       answers[i].classList.remove("active");
-      imgOpen.style.display = "block";
-      imgClose.style.display = "none";
+      imgOpen[i].style.display = "block";
+      imgClose[i].style.display = "none";
       open = false;
     } else {
       answers[i].classList.add("active");
-      imgOpen.style.display = "none";
-      imgClose.style.display = "block";
+      imgOpen[i].style.display = "none";
+      imgClose[i].style.display = "block";
       open = true;
     }
   })
