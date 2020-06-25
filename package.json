@@ -1,7 +1,7 @@
 {
   "name": "js11",
   "version": "1.0.0",
-  "description": "Four card feature section",
+  "description": "Bookmark landing page",
   "main": "gruntfile.js",
   "scripts": {
     "start": "npm run open",
