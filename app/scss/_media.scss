@@ -29,6 +29,7 @@
     }
 
     .header {
+        padding: 5rem 3.5rem;
 
         .header_intro {
             display: flex;
@@ -249,23 +250,27 @@
 
 @media screen and (max-width: 1200px) and (min-width: 780px) {
 
+    .col_4 {
+        width: 50%;
+    }
+
     .header {
         padding: 5rem 7rem;
     }
 
     .intro {
         margin-left: 7rem;
+
+        .intro_content {
+
+            .button_intro {
+                margin: 1rem 0 0;
+            }
+        }
     }
 
     .container_questions {
         margin: 12rem 7rem 14rem;
-    }
-
-    .container_contact {
-
-        .col_4 {
-            width: 50%;
-        }
     }
 
     .footer {

@@ -132,6 +132,7 @@ p {
   color: #9194a1; }
 
 .header {
+  width: 100%;
   padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -328,57 +329,59 @@ p {
     line-height: 1.2; }
   .button {
     padding: 1.2rem 1.8rem; }
-  .header .header_intro {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    z-index: 1000; }
-    .header .header_intro .nav_button {
-      display: inline-block;
-      cursor: pointer; }
-      .header .header_intro .nav_button .nav_button_close {
-        display: none; }
-  .header .nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(37, 43, 70, 0.8);
-    z-index: 100; }
-    .header .nav .list {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 10rem 3.5rem 0;
-      border-top: 0.1rem solid white;
-      text-align: center; }
-      .header .nav .list .list_item {
-        width: 100%;
-        border-bottom: 0.1rem solid white; }
-        .header .nav .list .list_item:last-child {
-          margin-top: 2rem;
-          border-bottom: none; }
-        .header .nav .list .list_item .list_item_link {
-          display: inline-block;
-          padding: 2.5rem;
-          color: white; }
-          .header .nav .list .list_item .list_item_link:hover {
-            color: #fa5757; }
-        .header .nav .list .list_item .button {
-          padding: 1.5rem;
-          background-color: transparent;
-          border-color: white;
+  .header {
+    padding: 5rem 3.5rem; }
+    .header .header_intro {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      z-index: 1000; }
+      .header .header_intro .nav_button {
+        display: inline-block;
+        cursor: pointer; }
+        .header .header_intro .nav_button .nav_button_close {
+          display: none; }
+    .header .nav {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(37, 43, 70, 0.8);
+      z-index: 100; }
+      .header .nav .list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10rem 3.5rem 0;
+        border-top: 0.1rem solid white;
+        text-align: center; }
+        .header .nav .list .list_item {
           width: 100%;
-          box-shadow: none; }
-    .header .nav .container_social_icon {
-      display: block;
-      margin-top: 12rem;
-      text-align: center; }
-      .header .nav .container_social_icon .social_icon_link {
-        margin: 0 1.5rem; }
+          border-bottom: 0.1rem solid white; }
+          .header .nav .list .list_item:last-child {
+            margin-top: 2rem;
+            border-bottom: none; }
+          .header .nav .list .list_item .list_item_link {
+            display: inline-block;
+            padding: 2.5rem;
+            color: white; }
+            .header .nav .list .list_item .list_item_link:hover {
+              color: #fa5757; }
+          .header .nav .list .list_item .button {
+            padding: 1.5rem;
+            background-color: transparent;
+            border-color: white;
+            width: 100%;
+            box-shadow: none; }
+      .header .nav .container_social_icon {
+        display: block;
+        margin-top: 12rem;
+        text-align: center; }
+        .header .nav .container_social_icon .social_icon_link {
+          margin: 0 1.5rem; }
   .intro {
     flex-direction: column;
     margin: 0 3.5rem; }
@@ -449,13 +452,15 @@ p {
       margin-right: 0; } }
 
 @media screen and (max-width: 1200px) and (min-width: 780px) {
+  .col_4 {
+    width: 50%; }
   .header {
     padding: 5rem 7rem; }
   .intro {
     margin-left: 7rem; }
+    .intro .intro_content .button_intro {
+      margin: 1rem 0 0; }
   .container_questions {
     margin: 12rem 7rem 14rem; }
-  .container_contact .col_4 {
-    width: 50%; }
   .footer {
     padding: 3.5rem 7rem; } }
