@@ -447,3 +447,15 @@ p {
             margin-bottom: 3rem; }
     .footer .container_social_icon .social_icon_link:first-child {
       margin-right: 0; } }
+
+@media screen and (max-width: 1200px) and (min-width: 780px) {
+  .header {
+    padding: 5rem 7rem; }
+  .intro {
+    margin-left: 7rem; }
+  .container_questions {
+    margin: 12rem 7rem 14rem; }
+  .container_contact .col_4 {
+    width: 50%; }
+  .footer {
+    padding: 3.5rem 7rem; } }

@@ -62,3 +62,23 @@ for (let i = 0; i < links.length; i++) {
     }
   })
 }
+
+const navButton = document.getElementById("nav_button");
+const navOpen = document.getElementById("nav_button_open");
+const navClose = document.getElementById("nav_button_close");
+const nav = document.getElementById("nav");
+let isOpen = false;
+
+navButton.addEventListener("click", function() {
+  if(isOpen) {
+    navOpen.style.display = "block";
+    navClose.style.display = "none";
+    nav.style.display = "none";
+    isOpen = false;
+  } else {
+    navOpen.style.display = "none";
+    navClose.style.display = "block";
+    nav.style.display = "block";
+    isOpen = true;
+  }
+})
